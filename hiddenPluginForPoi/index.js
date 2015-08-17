@@ -1,18 +1,17 @@
 function hotkey()
 {
-var a=window.event.keyCode;
 if(event.ctrlKey)
 {
-display('needToHide')
+hideDisplay('needToHide')
 }
 }
-function display(y)
+function hideDisplay(y)
 {
-	$(y).style.display=($(y).style.display=="none")?"":"none";
+	getElementToHide(y).style.display=(getElementToHide(y).style.display=="none")?"":"none"
 }
-function $(s)
+function getElementToHide(idOfHide)
 {
-	return document.getElementById(s);
+	return document.getElementById(idOfHide)
 }
-document.getElementsByTagName("html")[0].setAttribute("id","needToHide");
+document.getElementsByTagName("html")[0].setAttribute("id","needToHide")
 document.onkeydown = hotkey;
