@@ -3,7 +3,7 @@ function hotkey()
 var a=window.event.keyCode;
 if(event.ctrlKey)
 {
-display('need')
+display('needToHide')
 }
 }
 function display(y)
@@ -14,5 +14,5 @@ function $(s)
 {
 	return document.getElementById(s);
 }
-document.getElementsByTagName("html")[0].setAttribute("id","need");
+document.getElementsByTagName("html")[0].setAttribute("id","needToHide");
 document.onkeydown = hotkey;
