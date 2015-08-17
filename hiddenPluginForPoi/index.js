@@ -5,9 +5,16 @@ if(event.ctrlKey)
 hideDisplay('needToHide')
 }
 }
-function hideDisplay(y)
+function hideDisplay(toHide)
 {
-	getElementToHide(y).style.display=(getElementToHide(y).style.display=="none")?"":"none"
+	if (getElementToHide(toHide).style.display=="none")
+	{
+		getElementToHide(toHide).style.display=""
+	}
+	else
+	{
+		getElementToHide(toHide).style.display="none"
+	}
 }
 function getElementToHide(idOfHide)
 {
