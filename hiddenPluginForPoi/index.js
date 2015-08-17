@@ -20,5 +20,7 @@ function getElementToHide(idOfHide)
 {
 	return document.getElementById(idOfHide)
 }
-document.getElementsByTagName("html")[0].setAttribute("id","needToHide")
+var htmlArray = new Array()
+htmlArray = document.getElementsByTagName("html")
+htmlArray[0].setAttribute("id","needToHide")
 document.onkeydown = hotkey;
