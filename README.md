@@ -4,8 +4,8 @@
 A plugin which used to hide content for [poi](https://github.com/poooi/poi) which is a browser developed for kantai collection
 ###Preparation
 
-1.	Download the "hiddenPluginForPoi" folder
-2.	Move the "hiddenPluginForPoi" folder to /Application/Poi.app/Contents/Resources/app/plugins/
+1.	Download the "hiddenPluginForPoi.dmg" from [download link](https://github.com/corfishy/hiddenPluginForPoi/releases/download/v0.7.3/hiddenPlugin.dmg)
+2.	Open the dmg andMove the "hiddenPluginForPoi" folder to "plugins" folder.
 3.	Enjoy it!
 
 ###Usage Method
